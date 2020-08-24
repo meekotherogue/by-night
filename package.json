@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build:prod": "npm install && npm run-script build",
     "build": "npx @11ty/eleventy --formats=liquid,html,md,json,gif,jpg",
     "serve": "npx @11ty/eleventy --formats=liquid,html,md,json,gif,jpg --serve",
     "test": "echo \"Error: no test specified\" && exit 1"
