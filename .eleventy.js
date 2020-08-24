@@ -1,10 +1,10 @@
 const fs = require("fs");
+const fg = require('fast-glob');
+
+const imgs = fg.sync(['**/img/*', '!**/_site']);
+
 module.exports = (function(eleventyConfig) {
-  eleventyConfig.addFilter("filesize", function(path) {
-    let stat = fs.statSync(path);
-    if( stat ) {
-      return (stat.size/1024).toFixed(2) + " KB";
-    }
-    return "";
-   });
+  eleventyConfig.addCollection('imgs', function(collection) {
+    return imgs;
+  });
 });

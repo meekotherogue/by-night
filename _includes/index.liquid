@@ -2,20 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>{{ title }}</title>
+    <title>{{ site.title }}</title>
   </head>
   <body>
     <h1>{{ title }}</h1>
     <div>{{ content }}</div>
     <ul>
-      {% for filename in images %}
-      {% capture path %}img/{{ filename }}{% endcapture %}
-      <li>
-        <span>
-          <img src="img/{{ filename | url_encode }}" alt="{{ filename }}" />
-          {{ path | filesize }}
-        </span>
-      </li>
+      {% for img in collections.imgs %}
+        <li><img src="{{img}}" alt="" /></li>
       {% endfor %}
     </ul>
   </body>

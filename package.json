@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npx @11ty/eleventy --formats=liquid,html,md,gif,jpg",
-    "serve": "npx @11ty/eleventy --formats=liquid,html,md,gif,jpg --serve",
+    "build": "npx @11ty/eleventy --formats=liquid,html,md,json,gif,jpg",
+    "serve": "npx @11ty/eleventy --formats=liquid,html,md,json,gif,jpg --serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -13,5 +13,8 @@
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0"
+  },
+  "dependencies": {
+    "fast-glob": "^3.2.4"
   }
 }
