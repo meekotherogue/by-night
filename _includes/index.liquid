@@ -1,9 +1,3 @@
----
-title: Giffleball
-images:
-  - IMG_4680.jpg
-  - parrot.gif
----
 <!doctype html>
 <html lang="en">
   <head>
@@ -12,6 +6,7 @@ images:
   </head>
   <body>
     <h1>{{ title }}</h1>
+    <div>{{ content }}</div>
     <ul>
       {% for filename in images %}
       {% capture path %}img/{{ filename }}{% endcapture %}
