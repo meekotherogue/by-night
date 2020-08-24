@@ -1,0 +1,21 @@
+---
+title: Giffleball
+images:
+  - IMG_4680.jpg
+  - parrot.gif
+---
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+  <title>{{ title }}</title>
+ </head>
+ <body>
+  <h1>{{ title }}</h1>
+  <ul>
+  {% for filename in images %}
+   <li><img src="img/{{ filename }}" alt="{{ filename }}" /></li>
+  {% endfor %}
+  </ul>
+ </body>
+ </html>
