@@ -1,10 +1,10 @@
 const fs = require("fs");
-const fg = require('fast-glob');
+const fg = require("fast-glob");
 
-const imgs = fg.sync(['**/img/*', '!**/_site']);
+const imgs = fg.sync(["**/img/*", "!**/_site"]);
 
-module.exports = (function(eleventyConfig) {
-  eleventyConfig.addCollection('imgs', function(collection) {
+module.exports = function (eleventyConfig) {
+  eleventyConfig.addCollection("imgs", function (collection) {
     return imgs;
   });
-});
+};

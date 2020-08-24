@@ -1,7 +1,7 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>{{ site.title }}</title>
   </head>
   <body>
@@ -9,8 +9,8 @@
     <div>{{ content }}</div>
     <ul>
       {% for img in collections.imgs %}
-        <li><img src="{{img}}" alt="" /></li>
+      <li><img src="{{ img }}" alt="{{ img }}" /></li>
       {% endfor %}
     </ul>
   </body>
- </html>
+</html>
