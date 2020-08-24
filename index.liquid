@@ -14,7 +14,13 @@ images:
   <h1>{{ title }}</h1>
   <ul>
   {% for filename in images %}
-   <li><img src="img/{{ filename }}" alt="{{ filename }}" /></li>
+   {% capture path %}img/{{ filename }}{% endcapture %}
+   <li>
+    <span>
+      <img src="img/{{ filename | url_encode }}" alt="{{ filename }}" />
+       {{ path | filesize }}
+    </span>
+   </li>
   {% endfor %}
   </ul>
  </body>
