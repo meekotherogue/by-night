@@ -6,22 +6,22 @@ images:
 ---
 <!doctype html>
 <html lang="en">
- <head>
-  <meta charset="utf-8">
-  <title>{{ title }}</title>
- </head>
- <body>
-  <h1>{{ title }}</h1>
-  <ul>
-  {% for filename in images %}
-   {% capture path %}img/{{ filename }}{% endcapture %}
-   <li>
-    <span>
-      <img src="img/{{ filename | url_encode }}" alt="{{ filename }}" />
-       {{ path | filesize }}
-    </span>
-   </li>
-  {% endfor %}
-  </ul>
- </body>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ title }}</title>
+  </head>
+  <body>
+    <h1>{{ title }}</h1>
+    <ul>
+      {% for filename in images %}
+      {% capture path %}img/{{ filename }}{% endcapture %}
+      <li>
+        <span>
+          <img src="img/{{ filename | url_encode }}" alt="{{ filename }}" />
+          {{ path | filesize }}
+        </span>
+      </li>
+      {% endfor %}
+    </ul>
+  </body>
  </html>
