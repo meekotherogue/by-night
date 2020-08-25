@@ -8,8 +8,9 @@
     <h1>{{ title }}</h1>
     <div>{{ content }}</div>
     <div>
-      <a href="/art">Artwork</a>
-      <a href="/sketches">Sketches</a>
+      {% for img in collections[year] %}
+      <div><img src="{{ rootDir }}/{{ img }}" alt="{{ img }}" /></div>
+      {% endfor %}
     </div>
   </body>
 </html>
