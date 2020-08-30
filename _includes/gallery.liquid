@@ -8,6 +8,7 @@
         display: flex;
         flex-wrap: wrap;
         width: 1024px;
+        margin: 0 auto;
       }
 
       .gallery__thumbnail {
@@ -16,13 +17,16 @@
         align-items: center;
         overflow: hidden;
         margin: 4px;
-        width: 162px;
-        height: 162px;
+        width: 324px;
+        height: 324px;
         border-radius: 8px;
       }
 
-      .gallery__thumbnailimage img {
+      .gallery__thumbnailimage {
         object-fit: cover;
+        height: 100%;
+        width: 100%;
+        cursor: pointer;
       }
     </style>
   </head>
@@ -33,37 +37,14 @@
       {% for img in collections[gallery] %}
       <div
         class="gallery__thumbnail"
-        on="tap:carousel-with-preview.goToSlide(index={{img.index}})"
-        role="region"
-        tabindex="{{ img.index }}"
       >
         <img
           class="gallery__thumbnailimage"
           src="{{ rootDir }}/{{ img.file }}"
           alt="{{ img.file }}"
-          layout="fill"
         ></img>
       </div>
       {% endfor %}
     </div>
-    <amp-carousel
-      id="carousel-with-preview"
-      layout="responsive"
-      width="300"
-      height="200"
-      type="slides"
-      role="region"
-      aria-label="Carousel with slide previews"
-    >
-      {% for img in collections[gallery] %}
-      <amp-img
-        width="300"
-        height="200"
-        src="{{ rootDir }}/{{ img.file }}"
-        alt="{{ img.file }}"
-        layout="responsive"
-      ></amp-img>
-      {% endfor %}
-    </amp-carousel>
   </body>
 </html>
