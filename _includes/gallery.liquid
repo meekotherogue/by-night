@@ -32,11 +32,13 @@
       <div
         class="gallery__thumbnail"
         on="tap:carousel-with-preview.goToSlide(index={{img.index}})"
+        role="region"
+        tabindex="{{ img.index }}"
       >
         <img
           class="gallery__thumbnailimage"
           src="{{ rootDir }}/{{ img.file }}"
-          alt="{{ img }}"
+          alt="{{ img.file }}"
         ></img>
       </div>
       {% endfor %}
@@ -55,7 +57,7 @@
         width="300"
         height="200"
         src="{{ rootDir }}/{{ img.file }}"
-        alt="{{ img }}"
+        alt="{{ img.file }}"
         layout="responsive"
       ></amp-img>
       {% endfor %}
