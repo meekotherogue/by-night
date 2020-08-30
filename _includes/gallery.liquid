@@ -15,12 +15,14 @@
         justify-content: center;
         align-items: center;
         overflow: hidden;
+        margin: 4px;
+        width: 162px;
+        height: 162px;
+        border-radius: 8px;
       }
 
-      .gallery__thumbnailimage {
-        flex-shrink: 0;
-        max-width: 128px;
-        max-height: 128px;
+      .gallery__thumbnailimage img {
+        object-fit: cover;
       }
     </style>
   </head>
@@ -39,6 +41,7 @@
           class="gallery__thumbnailimage"
           src="{{ rootDir }}/{{ img.file }}"
           alt="{{ img.file }}"
+          layout="fill"
         ></img>
       </div>
       {% endfor %}
