@@ -31,11 +31,11 @@
       {% for img in collections[gallery] %}
       <div
         class="gallery__thumbnail"
-        on="tap:carousel-with-preview.goToSlide(index=0)"
+        on="tap:carousel-with-preview.goToSlide(index={{img.index}})"
       >
         <img
           class="gallery__thumbnailimage"
-          src="{{ rootDir }}/{{ img }}"
+          src="{{ rootDir }}/{{ img.file }}"
           alt="{{ img }}"
         ></img>
       </div>
@@ -54,7 +54,7 @@
       <amp-img
         width="300"
         height="200"
-        src="{{ rootDir }}/{{ img }}"
+        src="{{ rootDir }}/{{ img.file }}"
         alt="{{ img }}"
         layout="responsive"
       ></amp-img>

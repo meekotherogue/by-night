@@ -11,10 +11,20 @@ module.exports = function (eleventyConfig) {
 
   // Collections
   eleventyConfig.addCollection("art2017", function (collection) {
-    return art2017;
+    return art2017.map(function (file, index) {
+      return {
+        index: index,
+        file: file,
+      };
+    });
   });
   eleventyConfig.addCollection("art2018", function (collection) {
-    return art2018;
+    return art2018.map(function (file, index) {
+      return {
+        index: index,
+        file: file,
+      };
+    });
   });
 
   // Passthrough Copy
