@@ -3,7 +3,26 @@
   <head>
     <meta charset="utf-8" />
     <title>{{ site.title }}</title>
-    <link rel="stylesheet" href="/css/styles.css" />
+    <style>
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        width: 1024px;
+      }
+
+      .gallery__thumbnail {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+      }
+
+      .gallery__thumbnail-image {
+        flex-shrink: 0;
+        max-width: 128px;
+        max-height: 128px;
+      }
+    </style>
   </head>
   <body>
     <h1>{{ title }} {{ year }}</h1>
