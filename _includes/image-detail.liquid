@@ -1,0 +1,32 @@
+---
+permalink: /image-detail/{{ image.id }}/index.html
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>{{ site.title }}</title>
+    <style>
+      .image-detail {
+        width: 1024px;
+        margin: 0 auto;
+      }
+      .image-detail__image {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>{{ title }}</h1>
+    <div class="image-detail">
+      <img
+        class="image-detail__image"
+        src="{{ rootDir }}/{{ image.file }}"
+        alt="{{ image.file }}"
+      />
+    </div>
+  </body>
+</html>

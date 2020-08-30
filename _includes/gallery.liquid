@@ -26,7 +26,6 @@
         object-fit: cover;
         height: 100%;
         width: 100%;
-        cursor: pointer;
       }
     </style>
   </head>
@@ -35,15 +34,17 @@
     <div>{{ content }}</div>
     <div class="gallery">
       {% for img in collections[gallery] %}
-      <div
-        class="gallery__thumbnail"
-      >
-        <img
-          class="gallery__thumbnailimage"
-          src="{{ rootDir }}/{{ img.file }}"
-          alt="{{ img.file }}"
-        ></img>
-      </div>
+      <a href="/image-detail/{{ img.id }}">
+        <div
+          class="gallery__thumbnail"
+        >
+          <img
+            class="gallery__thumbnailimage"
+            src="{{ rootDir }}/{{ img.file }}"
+            alt="{{ img.file }}"
+          ></img>
+        </div>
+      </a>
       {% endfor %}
     </div>
   </body>
