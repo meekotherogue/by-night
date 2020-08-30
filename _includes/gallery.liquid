@@ -3,20 +3,42 @@
   <head>
     <meta charset="utf-8" />
     <title>{{ site.title }}</title>
+    <style>
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        width: 1024px;
+      }
+
+      .gallery__thumbnail {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+      }
+
+      .gallery__thumbnailimage {
+        flex-shrink: 0;
+        max-width: 128px;
+        max-height: 128px;
+      }
+    </style>
   </head>
   <body>
     <h1>{{ title }} {{ year }}</h1>
     <div>{{ content }}</div>
-    <div class="carousel-preview">
+    <div class="gallery">
       {% for img in collections[gallery] %}
-      <button on="tap:carousel-with-preview.goToSlide(index=0)">
-        <amp-img
+      <div
+        class="gallery__thumbnail"
+        on="tap:carousel-with-preview.goToSlide(index=0)"
+      >
+        <img
+          class="gallery__thumbnailimage"
           src="{{ rootDir }}/{{ img }}"
-          width="128"
-          height="128"
           alt="{{ img }}"
-        ></amp-img>
-      </button>
+        ></img>
+      </div>
       {% endfor %}
     </div>
     <amp-carousel
