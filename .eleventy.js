@@ -11,4 +11,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addCollection("art2018", function (collection) {
     return art2018;
   });
+  eleventyConfig.addPassthroughCopy("css");
+  return {
+    passthroughFileCopy: true,
+  };
 };

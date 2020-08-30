@@ -3,13 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <title>{{ site.title }}</title>
+    <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
     <h1>{{ title }}</h1>
     <div>{{ content }}</div>
-    <div>
+    <div class="gallery">
       {% for img in collections[year] %}
-      <div><img src="{{ rootDir }}/{{ img }}" alt="{{ img }}" /></div>
+      <div class="gallery__thumbnail">
+        <img
+          class="gallery__thumbnail-image"
+          src="{{ rootDir }}/{{ img }}"
+          alt="{{ img }}"
+        />
+      </div>
       {% endfor %}
     </div>
   </body>

@@ -1,0 +1,18 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1024px;
+}
+
+.gallery__thumbnail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.gallery__thumbnail-image {
+  flex-shrink: 0;
+  max-width: 128px;
+  max-height: 128px;
+}
