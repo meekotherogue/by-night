@@ -9,28 +9,6 @@ module.exports = function (eleventyConfig) {
   // Plugins
   // eleventyConfig.addPlugin(ampPlugin);
 
-  // Collections
-  eleventyConfig.addCollection("art2017", function (collection) {
-    return art2017.map(function (file, index) {
-      return {
-        type: "art",
-        year: "2017",
-        index: index,
-        file: file,
-      };
-    });
-  });
-  eleventyConfig.addCollection("art2018", function (collection) {
-    return art2018.map(function (file, index) {
-      return {
-        type: "art",
-        year: "2018",
-        index: index,
-        file: file,
-      };
-    });
-  });
-
   // Passthrough Copy
   eleventyConfig.addPassthroughCopy("css");
   return {
