@@ -8,25 +8,59 @@ permalink: /{{ image.type }}/{{ image.year }}/{{ image.index }}/index.html
     <meta charset="utf-8" />
     <title>{{ site.title }}</title>
     <style>
+      .image-modal {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+      }
       .image-detail {
         width: 1024px;
+        max-height: 768px;
         margin: 0 auto;
+        display: flex;
+        justify-content: center;
       }
       .image-detail__image {
         object-fit: cover;
+        max-height: 768px;
+      }
+      .prev {
+        position: relative;
+        left: 0px;
+        top: 0px;
+        width: 25%;
         height: 100%;
-        width: 100%;
+      }
+      .next {
+        position: relative;
+        right: 0px;
+        top: 0px;
+        width: 25%;
+        height: 100%;
       }
     </style>
   </head>
   <body>
-    <h1>{{ title }}</h1>
-    <div class="image-detail">
-      <img
-        class="image-detail__image"
-        src="{{ rootDir }}/{{ image.file }}"
-        alt="{{ image.file }}"
-      />
+    <div class="image-modal">
+      <div class="image-detail">
+        {% if pagination.href.previous %}
+        <div class="prev">
+          <a href="{{ pagination.href.previous }}">Previous Page</a>
+        </div>
+        {% endif %}
+        <img
+          class="image-detail__image"
+          src="{{ rootDir }}/{{ image.file }}"
+          alt="{{ image.file }}"
+        />
+        {% if pagination.href.next %}
+        <div class="next">
+          <a href="{{ pagination.href.next }}">Next Page</a>
+        </div>
+        {% endif %}
+      </div>
     </div>
   </body>
 </html>
