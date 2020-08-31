@@ -13,7 +13,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addCollection("art2017", function (collection) {
     return art2017.map(function (file, index) {
       return {
-        id: "art-2017-" + index,
+        type: "art",
+        year: "2017",
         index: index,
         file: file,
       };
@@ -22,7 +23,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addCollection("art2018", function (collection) {
     return art2018.map(function (file, index) {
       return {
-        id: "art-2018-" + index,
+        type: "art",
+        year: "2018",
         index: index,
         file: file,
       };

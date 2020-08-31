@@ -34,7 +34,7 @@
     <div>{{ content }}</div>
     <div class="gallery">
       {% for img in collections[gallery] %}
-      <a href="/image-detail/{{ img.id }}">
+      <a href="/{{ img.type }}/{{ img.year }}/{{ img.index }}">
         <div
           class="gallery__thumbnail"
         >

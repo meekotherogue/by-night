@@ -4,7 +4,8 @@ module.exports = function (type, year) {
   const images = fg.sync([`./img/${type}/${year}/*`, "!**/_site"]);
   return images.map(function (file, index) {
     return {
-      id: `${type}-${year}-${index}`,
+      type: type,
+      year: year,
       index: index,
       file: file,
     };
