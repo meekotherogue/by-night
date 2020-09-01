@@ -51,17 +51,5 @@ permalink: /{{ type }}/{{ year }}/page-{{ pagination.pageNumber }}/index.html
       </a>
       {% endfor %}
     </div>
-    {% if pagination.pageNumber != 0 %}
-      <a href="{{ pagination.href.first }}">First Page</a>
-    {% endif %}
-    {% if pagination.href.previous %}
-      <a href="{{ pagination.href.previous }}">Previous Page</a>
-    {% endif %}
-    {% if pagination.href.next %}
-      <a href="{{ pagination.href.next }}">Next Page</a>
-    {% endif %}
-    {% if pagination.href.first != pagination.href.last %}
-      <a href="{{ pagination.href.last }}">Last Page</a>
-    {% endif %}
   </body>
 </html>
