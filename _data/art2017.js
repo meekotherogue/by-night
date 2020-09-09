@@ -1,5 +1,5 @@
-const fileParser = require("./util/fileParser");
+const imageParser = require("../util/imageParser");
 
 module.exports = function () {
-  return fileParser("art", "2017");
+  return imageParser("art", "2017");
 };
