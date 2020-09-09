@@ -9,7 +9,8 @@ meta=()
 
 for file in $dir*
 do
-  json="{\"file\": \"$file\", \"year\": \"$year\", \"description\": \"$desc\"}"
+  name=$(basename $file)
+  json="{\"file\": \"$file\", \"name\": \"$name\", \"year\": \"$year\", \"description\": \"$desc\"}"
   meta+=("$json")
 done
 
