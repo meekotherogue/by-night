@@ -1,11 +1,8 @@
 ---
 title: Art
-layout: gallery.liquid
+layout: art/gallery2017.liquid
 type: art
 year: 2017
-pagination:
-  data: art2017
-  size: 600
 ---
 
 Here is the collection of paintings and longer drawings I have done in 2017

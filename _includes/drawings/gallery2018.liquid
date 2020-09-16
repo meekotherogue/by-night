@@ -1,3 +1,7 @@
+---
+permalink: /{{ type }}/{{ year }}/index.html
+---
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,11 +9,8 @@
     <title>{{ site.title }}</title>
   </head>
   <body>
-    <h1>{{ title }}</h1>
+    <h1>{{ title }} {{ year }}</h1>
     <div>{{ content }}</div>
-    <div>
-      <a href="{{ rootDir }}/{{ type }}/2018">2018</a>
-      <a href="{{ rootDir }}/{{ type }}/2017">2017</a>
-    </div>
+    {% assign images = drawings2018 %} {% include gallery %}
   </body>
 </html>
