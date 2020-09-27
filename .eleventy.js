@@ -1,11 +1,7 @@
-const fs = require("fs");
-const fg = require("fast-glob");
-const imagesResponsiver = require("eleventy-plugin-images-responsiver");
-
 const Image = require("@11ty/eleventy-img");
+
 function eleventyImage(className, type, year, imagePath, widths) {
-  var outputFormat = "jpg";
-  // returns Promise
+  let outputFormat = "jpg";
   return Image(`${imagePath}`, {
     widths: widths,
     formats: [outputFormat],
@@ -13,7 +9,6 @@ function eleventyImage(className, type, year, imagePath, widths) {
     outputDir: `_site/dist/img/${type}/${year}`,
   }).then(function (props) {
     let lowestSrc = props[outputFormat][0];
-    console.log(props);
 
     // Iterate over formats and widths
     let sources = Object.values(props).map((imageFormat) => {
@@ -40,9 +35,6 @@ function eleventyImage(className, type, year, imagePath, widths) {
 }
 
 module.exports = function (eleventyConfig) {
-  // Plugins
-  // eleventyConfig.addPlugin(imagesResponsiver);
-
   // Javascript
   eleventyConfig.addLiquidShortcode("galleryThumbnailImage", function (
     type,
