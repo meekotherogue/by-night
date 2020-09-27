@@ -32,14 +32,8 @@
     <div class="gallery">
       {% for img in images %}
       <a href="/{{ img.type }}/{{ img.year }}/{{ img.index }}">
-        <div
-          class="gallery__thumbnail"
-        >
-          <img
-            class="gallery__thumbnailimage"
-            src="{{ rootDir }}/{{ img.file }}"
-            alt="{{ img.file }}"
-          ></img>
+        <div class="gallery__thumbnail">
+          {% galleryThumbnailImage img.type img.year img.file %}
         </div>
       </a>
       {% endfor %}
