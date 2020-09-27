@@ -36,6 +36,19 @@ module.exports = function (eleventyConfig) {
     ]);
   });
 
+  eleventyConfig.addLiquidShortcode("imageDetail", function (
+    type,
+    year,
+    fileName
+  ) {
+    return eleventyImage("detail__image", type, year, fileName, [
+      null,
+      1280,
+      1040,
+      800,
+    ]);
+  });
+
   // Passthrough Copy
   eleventyConfig.addPassthroughCopy("css");
   return {

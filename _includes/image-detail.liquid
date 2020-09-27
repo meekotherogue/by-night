@@ -50,13 +50,8 @@ permalink: /{{ image.type }}/{{ image.year }}/{{ image.index }}/index.html
         <div class="prev">
           <a href="{{ pagination.href.previous }}">Previous Page</a>
         </div>
-        {% endif %}
-        <img
-          class="image-detail__image"
-          src="{{ rootDir }}/{{ image.file }}"
-          alt="{{ image.file }}"
-        />
-        {% if pagination.href.next %}
+        {% endif %} {% imageDetail image.type image.year image.file %} {% if
+        pagination.href.next %}
         <div class="next">
           <a href="{{ pagination.href.next }}">Next Page</a>
         </div>
