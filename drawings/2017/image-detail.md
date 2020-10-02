@@ -1,5 +1,4 @@
 ---
-title: Image detail
 layout: image-detail.liquid
 pagination:
   data: drawings2017

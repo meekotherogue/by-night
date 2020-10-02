@@ -1,17 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-  </head>
-  <body>
-    <div class="gallery">
-      {% for img in images %}
-      <a href="/{{ img.type }}/{{ img.year }}/{{ img.index }}">
-        <div class="gallery__thumbnail">
-          {% galleryThumbnailImage img.type img.year img.file %}
-        </div>
-      </a>
-      {% endfor %}
+<div class="gallery">
+  {% for img in images %}
+  <a href="/{{ img.type }}/{{ img.year }}/{{ img.index }}">
+    <div class="gallery__thumbnail">
+      {% galleryThumbnailImage img.type img.year img.file %}
     </div>
-  </body>
-</html>
+  </a>
+  {% endfor %}
+</div>

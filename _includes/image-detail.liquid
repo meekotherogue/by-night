@@ -1,31 +1,24 @@
 ---
 permalink: /{{ image.type }}/{{ image.year }}/{{ image.index }}/index.html
-styles: image-detail
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>{{ site.title }}</title>
-  </head>
-  <body>
-    <div class="image-modal">
-      <a href="{{ rootDir }}/{{ image.type }}/{{ image.year }}">X</a>
-      <div class="image-detail">
-        {% if pagination.href.previous %}
-        <div class="prev">
-          <a href="{{ pagination.href.previous }}">Previous Page</a>
-        </div>
-        {% endif %} {% imageDetail image.type image.year image.file %} {% if
-        pagination.href.next %}
-        <div class="next">
-          <a href="{{ pagination.href.next }}">Next Page</a>
-        </div>
-        {% endif %}
-        <div>{{ image.description }}</div>
-      </div>
-      <div class="image-complimentary"></div>
+{% layout root.liquid %} {% block content %}
+
+<div class="image-modal">
+  <a href="{{ rootDir }}/{{ image.type }}/{{ image.year }}">X</a>
+  <div class="image-detail">
+    {% if pagination.href.previous %}
+    <div class="prev">
+      <a href="{{ pagination.href.previous }}">Previous Page</a>
     </div>
-  </body>
-</html>
+    {% endif %} {% imageDetail image.type image.year image.file %} {% if
+    pagination.href.next %}
+    <div class="next">
+      <a href="{{ pagination.href.next }}">Next Page</a>
+    </div>
+    {% endif %}
+    <div>{{ image.description }}</div>
+  </div>
+  <div class="image-complimentary"></div>
+</div>
+{% endblock %}

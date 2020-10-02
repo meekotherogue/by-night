@@ -2,15 +2,5 @@
 permalink: /{{ type }}/{{ year }}/index.html
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>{{ site.title }}</title>
-  </head>
-  <body>
-    <h1>{{ title }} {{ year }}</h1>
-    <div>{{ content }}</div>
-    {% assign images = drawings2018 %} {% include gallery %}
-  </body>
-</html>
+{% layout root.liquid %} {% block content %} {% assign images = drawings2018 %}
+{% include gallery %} {% endblock %}
