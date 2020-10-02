@@ -1,15 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>{{ site.title }}</title>
-  </head>
-  <body>
-    <h1>{{ title }}</h1>
-    <div>{{ content }}</div>
-    <div>
-      <a href="{{ rootDir }}/{{ type }}/2018">2018</a>
-      <a href="{{ rootDir }}/{{ type }}/2017">2017</a>
-    </div>
-  </body>
-</html>
+{% layout root.liquid %} {% block content %}
+<div>
+  <a href="{{ rootDir }}/{{ type }}/2018">2018</a>
+  <a href="{{ rootDir }}/{{ type }}/2017">2017</a>
+</div>
+{% endblock %}

@@ -1,5 +1,6 @@
 ---
 permalink: /{{ image.type }}/{{ image.year }}/{{ image.index }}/index.html
+styles: image-detail
 ---
 
 <!DOCTYPE html>
@@ -7,40 +8,6 @@ permalink: /{{ image.type }}/{{ image.year }}/{{ image.index }}/index.html
   <head>
     <meta charset="utf-8" />
     <title>{{ site.title }}</title>
-    <style>
-      .image-modal {
-        position: absolute;
-        left: 0px;
-        top: 0px;
-        width: 100%;
-        height: 100%;
-      }
-      .image-detail {
-        width: 1024px;
-        max-height: 768px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-      }
-      .image-detail__image {
-        object-fit: cover;
-        max-height: 768px;
-      }
-      .prev {
-        position: relative;
-        left: 0px;
-        top: 0px;
-        width: 25%;
-        height: 100%;
-      }
-      .next {
-        position: relative;
-        right: 0px;
-        top: 0px;
-        width: 25%;
-        height: 100%;
-      }
-    </style>
   </head>
   <body>
     <div class="image-modal">
