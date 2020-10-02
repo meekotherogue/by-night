@@ -1,15 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>{{ site.title }}</title>
-  </head>
-  <body>
-    <h1>{{ title }}</h1>
-    <div>{{ content }}</div>
-    <div>
-      <a href="/art">Artwork</a>
-      <a href="/drawings">Drawings</a>
-    </div>
-  </body>
-</html>
+{% layout root.liquid %} {% block content %}
+<h1>{{ title }}</h1>
+<div>{{ content }}</div>
+<div>
+  <a href="/art">Artwork</a>
+  <a href="/drawings">Drawings</a>
+</div>
+{% endblock %}
