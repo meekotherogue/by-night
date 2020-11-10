@@ -6,25 +6,10 @@
   height: 100%;
 }
 .image-detail {
-  width: 1024px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
+  height: 100%;
 }
 .image-detail__image {
-  object-fit: cover;
-}
-.prev {
-  position: relative;
-  left: 0px;
-  top: 0px;
-  width: 25%;
+  object-fit: contain;
   height: 100%;
-}
-.next {
-  position: relative;
-  right: 0px;
-  top: 0px;
-  width: 25%;
-  height: 100%;
+  width: 100%;
 }

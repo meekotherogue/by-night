@@ -25,8 +25,6 @@ function eleventyImage(className, type, year, imagePath, widths) {
     return `<picture>
       ${sources}
         <img src="/dist/${lowestSrc.url}"
-          width="${lowestSrc.width}"
-          height="${lowestSrc.height}"
           alt="${lowestSrc.url}"
           class="${className}">
       </picture>`;
