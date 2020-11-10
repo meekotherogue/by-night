@@ -7,14 +7,12 @@
 }
 .image-detail {
   width: 1024px;
-  max-height: 768px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
 }
 .image-detail__image {
   object-fit: cover;
-  max-height: 768px;
 }
 .prev {
   position: relative;

@@ -11,25 +11,24 @@ function eleventyImage(className, type, year, imagePath, widths) {
     let lowestSrc = props[outputFormat][0];
 
     // Iterate over formats and widths
-    let sources = Object.values(props).map((imageFormat) => {
-      return imageFormat
-        .reverse()
-        .map((image) => {
-          return `<source
-            type="image/${image.format}"
-            srcset="/dist/${image.url} ${image.width}w"
-            media="(min-width:${image.width}px)">`;
-        })
-        .join("\n");
-    });
+    let sources = `<source
+      type="image/${lowestSrc.format}"
+      srcset="${Object.values(props).map((imageFormat) => {
+        return imageFormat
+          .map((image) => {
+            return `/dist/${image.url} ${image.width}w`;
+          })
+          .join(", ");
+      })}"
+      sizes="100vw">`;
 
     return `<picture>
       ${sources}
         <img src="/dist/${lowestSrc.url}"
           width="${lowestSrc.width}"
           height="${lowestSrc.height}"
-          alt="${imagePath}"
-          class="${className}"> 
+          alt="${lowestSrc.url}"
+          class="${className}">
       </picture>`;
   });
 }
