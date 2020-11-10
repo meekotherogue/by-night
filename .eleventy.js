@@ -23,7 +23,7 @@ function eleventyImage(className, type, year, imagePath, widths) {
         .join("\n");
     });
 
-    return `<picture class="${className}">
+    return `<picture>
       ${sources}
         <img src="/dist/${lowestSrc.url}"
           width="${lowestSrc.width}"
