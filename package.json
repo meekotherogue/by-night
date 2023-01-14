@@ -13,10 +13,10 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^0.11.0",
+    "@11ty/eleventy": "^1.0.2",
     "jslint": "^0.12.1"
   },
   "dependencies": {
-    "@11ty/eleventy-img": "^0.3.0"
+    "@11ty/eleventy-img": "^2.0.1"
   }
 }

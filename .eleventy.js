@@ -1,7 +1,7 @@
 const Image = require("@11ty/eleventy-img");
 
 function eleventyImage(className, type, year, imagePath, widths) {
-  let outputFormat = "jpg";
+  let outputFormat = "jpeg";
   return Image(`${imagePath}`, {
     widths: widths,
     formats: [outputFormat],
@@ -54,6 +54,13 @@ module.exports = function (eleventyConfig) {
       1040,
       800,
     ]);
+  });
+
+  // Eleventy Options
+  eleventyConfig.setLiquidOptions({
+    dynamicPartials: false,
+    strictFilters: false,
+    root: ["_includes"],
   });
 
   // Passthrough Copy
