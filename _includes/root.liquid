@@ -16,14 +16,21 @@
     {% endif %}
     <link
       rel="stylesheet"
+      href="/css/root.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
       href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"
       integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ"
       crossorigin="anonymous"
     />
   </head>
   <body>
-    <h1>{{ title }}</h1>
-    <div>{{ content }}</div>
-    {% block content %} 404 {% endblock %}
+    <div class="root">
+      {% include header %}
+      <div>{{ content }}</div>
+      {% block content %} 404 {% endblock %}
+    </div>
   </body>
 </html>

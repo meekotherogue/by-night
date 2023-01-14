@@ -56,6 +56,38 @@ module.exports = function (eleventyConfig) {
     ]);
   });
 
+  eleventyConfig.addLiquidShortcode("assets", function (imagePath, className) {
+    let outputFormat = "jpeg";
+    return Image(`img/assets/${imagePath}.${outputFormat}`, {
+      widths: [300],
+      formats: [outputFormat],
+      urlPath: `img/assets`,
+      outputDir: `_site/dist/img/assets`,
+    }).then(function (props) {
+      let lowestSrc = props[outputFormat][0];
+      console.log(`here I am ${lowestSrc}\n\n\n\n`);
+
+      // Iterate over formats and widths
+      let sources = `<source
+        type="image/${lowestSrc.format}"
+        srcset="${Object.values(props).map((imageFormat) => {
+          return imageFormat
+            .map((image) => {
+              return `/dist/${image.url} ${image.width}w`;
+            })
+            .join(", ");
+        })}"
+        sizes="100vw">`;
+
+      return `<picture>
+        ${sources}
+          <img src="/dist/${lowestSrc.url}"
+            alt="${lowestSrc.url}"
+            class="${className}">
+        </picture>`;
+    });
+  });
+
   // Eleventy Options
   eleventyConfig.setLiquidOptions({
     dynamicPartials: false,
