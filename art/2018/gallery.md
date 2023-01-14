@@ -6,4 +6,4 @@ year: 2018
 component: gallery
 ---
 
-Here is the collection of paintings and longer drawings I have done in 2018
+Here is the collection of completed drawings and paintings I have done in 2018

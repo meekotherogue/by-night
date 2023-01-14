@@ -3,4 +3,8 @@ title: Artist by night
 layout: index.liquid
 ---
 
-This is my art gallery website. I am a developer by day and artist by night!
+Welcome to my art gallery website!
+
+Please check out my collection of artwork throughout the years.
+
+I am a developer by day, and an artist by night!
