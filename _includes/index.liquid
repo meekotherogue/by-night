@@ -1,6 +1,11 @@
-{% layout root.liquid %} {% block content %}
-<div>
-  <a href="/art">Artwork</a>
-  <a href="/drawings">Drawings</a>
-</div>
+{% layout root.liquid %}
+{% block content %}
+  <div class="picker">
+    <div class="picker__item">
+      <a class="picker__link" href="/art">Artwork</a>
+    </div>
+    <div class="picker__item">
+      <a class="picker__link" href="/drawings">Drawings</a>
+    </div>
+  </div>
 {% endblock %}

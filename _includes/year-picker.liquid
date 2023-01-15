@@ -1,6 +1,11 @@
-{% layout root.liquid %} {% block content %}
-<div>
-  <a href="{{ rootDir }}/{{ type }}/2018">2018</a>
-  <a href="{{ rootDir }}/{{ type }}/2017">2017</a>
-</div>
+{% layout root.liquid %}
+{% block content %}
+  <div class="picker">
+    <div class="picker__item">
+      <a class="picker__link" href="{{ rootDir }}/{{ type }}/2018">2018</a>
+    </div>
+    <div class="picker__item">
+      <a class="picker__link" href="{{ rootDir }}/{{ type }}/2017">2017</a>
+    </div>
+  </div>
 {% endblock %}

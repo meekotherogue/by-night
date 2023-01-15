@@ -65,7 +65,6 @@ module.exports = function (eleventyConfig) {
       outputDir: `_site/dist/img/assets`,
     }).then(function (props) {
       let lowestSrc = props[outputFormat][0];
-      console.log(`here I am ${lowestSrc}\n\n\n\n`);
 
       // Iterate over formats and widths
       let sources = `<source
