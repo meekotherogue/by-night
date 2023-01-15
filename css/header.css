@@ -22,5 +22,5 @@
 }
 
 .header .header__link:hover {
-  color: #878f99;
+  color: var(--dark-grey);
 }

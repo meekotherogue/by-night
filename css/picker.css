@@ -4,12 +4,13 @@
   height: 100%;
   max-width: 680px;
   width: 100%;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
 .picker .picker__item {
   margin-bottom: 16px;
   border: none;
+  border-radius: 12px;
   background-color: rgba(255, 255, 255, 0.8);
   color: rgb(0, 0, 0);
   box-shadow: rgb(10 11 13 / 8%) 0px 2px 4px 0px;
@@ -21,6 +22,17 @@
 }
 
 .picker .picker__link {
-  padding: 10px 0px;
+  padding: 12px 0px;
   display: block;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.picker .picker__link:link,
+.picker .picker__link:visited {
+  color: black;
+}
+
+.picker .picker__link:hover {
+  color: var(--dark-grey);
 }

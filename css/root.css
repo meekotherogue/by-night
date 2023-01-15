@@ -1,5 +1,6 @@
 @import "header.css";
 @import "picker.css";
+@import "colours.css";
 
 .root {
   display: flex;
@@ -7,8 +8,6 @@
   align-items: center;
   padding: 64px 20px;
   text-align: center;
-  background-color: #9f91c3;
-  min-height: 100lvh;
   max-width: 1028px;
   margin: 0 auto;
 }
@@ -17,4 +16,52 @@
   max-width: 680px;
   width: 100%;
   margin: 0 auto;
+}
+
+html:before {
+  content: "";
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  /* fallback */
+  background: var(--bg-gradient-start);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, var(--bg-gradient-start)),
+    color-stop(100%, var(--bg-gradient-end))
+  );
+  background: -webkit-radial-gradient(
+      ellipse at top,
+      transparent,
+      var(--bg-gradient-start)
+    ),
+    -webkit-radial-gradient(ellipse at bottom, transparent, var(--bg-gradient-end));
+  background: -moz-radial-gradient(
+      ellipse at top,
+      transparent,
+      var(--bg-gradient-start)
+    ),
+    -moz-radial-gradient(ellipse at bottom, transparent, var(--bg-gradient-end));
+  background: -ms-radial-gradient(
+      ellipse at top,
+      transparent,
+      var(--bg-gradient-start)
+    ),
+    -ms-radial-gradient(ellipse at bottom, transparent, var(--bg-gradient-end));
+  background: -o-radial-gradient(
+      ellipse at top,
+      transparent,
+      var(--bg-gradient-start)
+    ),
+    -o-radial-gradient(ellipse at bottom, transparent, var(--bg-gradient-end));
+  background: radial-gradient(
+      ellipse at top,
+      transparent,
+      var(--bg-gradient-start)
+    ),
+    radial-gradient(ellipse at bottom, transparent, var(--bg-gradient-end));
 }
