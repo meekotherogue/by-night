@@ -1,6 +1,6 @@
 ---
 title: Drawings, Sketches, and Studies
-layout: year-picker.liquid
+layout: landing-page.liquid
 type: drawings
 ---
 

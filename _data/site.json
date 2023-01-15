@@ -1,13 +1,35 @@
 {
   "title": "By Night",
-  "index": [
-    {
-      "title": "Artwork",
-      "href": "/art"
-    },
-    {
-      "title": "Drawings, Sketches, and Studies",
-      "href": "/drawings"
-    }
-  ]
+  "siteMap": {
+    "index": [
+      {
+        "title": "Artwork",
+        "href": "/art"
+      },
+      {
+        "title": "Drawings, Sketches, and Studies",
+        "href": "/drawings"
+      }
+    ],
+    "art": [
+      {
+        "title": "2018",
+        "href": "/art/2018"
+      },
+      {
+        "title": "2017",
+        "href": "/art/2017"
+      }
+    ],
+    "drawings": [
+      {
+        "title": "2018",
+        "href": "/drawings/2018"
+      },
+      {
+        "title": "2017",
+        "href": "/drawings/2017"
+      }
+    ]
+  }
 }

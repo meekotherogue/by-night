@@ -1,6 +1,7 @@
 ---
 title: Artist by night
-layout: index.liquid
+layout: landing-page.liquid
+type: index
 ---
 
 Welcome to my art gallery website!

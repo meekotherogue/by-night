@@ -1,5 +1,5 @@
 {% layout root.liquid %}
 {% block content %}
-  {% assign items = site.index %}
+  {% assign items = site.siteMap[type] %}
   {% include picker %}
 {% endblock %}

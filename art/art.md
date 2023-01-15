@@ -1,6 +1,6 @@
 ---
 title: Artwork
-layout: year-picker.liquid
+layout: landing-page.liquid
 type: art
 ---
 
