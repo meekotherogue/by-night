@@ -1,48 +1,68 @@
 .breadcrumb {
-  display: flex;
-  flex-direction: row;
   width: 100%;
   max-width: 680px;
-  width: 100%;
   margin: 0 auto;
-  justify-content: flex-start;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 0px;
 }
 
 .breadcrumb .breadcrumb__item {
-  margin-bottom: 16px;
-  margin-right: 12px;
-  border: none;
-  border-radius: 12px;
-  background-color: rgba(255, 255, 255, 0.8);
-  color: rgb(0, 0, 0);
-  box-shadow: rgb(10 11 13 / 8%) 0px 2px 4px 0px;
-}
-
-.breadcrumb .breadcrumb__item:hover {
-  transform: scale(1.02);
+  float: left;
 }
 
 .breadcrumb .breadcrumb__link {
-  padding: 8px;
-  display: block;
-  cursor: pointer;
+  color: white;
   text-decoration: none;
+  padding: 10px 0 10px 55px;
+  background: var(--purple-500);
+  position: relative;
+  display: block;
+  float: left;
 }
 
-.breadcrumb .breadcrumb__link:link,
-.breadcrumb .breadcrumb__link:visited {
+.breadcrumb .breadcrumb__link:after {
+  content: " ";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-left: 30px solid var(--purple-500);
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
+  left: 100%;
+  z-index: 2;
+}
+
+.breadcrumb .breadcrumb__item:first-child .breadcrumb__link {
+  padding-left: 20px;
+}
+.breadcrumb .breadcrumb__item:nth-child(2) .breadcrumb__link {
+  background: var(--purple-300);
+}
+.breadcrumb .breadcrumb__item:nth-child(2) .breadcrumb__link:after {
+  border-left-color: var(--purple-300);
+}
+.breadcrumb .breadcrumb__item:nth-child(3) .breadcrumb__link {
+  background: var(--purple-100);
+}
+.breadcrumb .breadcrumb__item:nth-child(3) .breadcrumb__link:after {
+  border-left-color: var(--purple-100);
+}
+.breadcrumb .breadcrumb__item:last-child .breadcrumb__link {
+  background: var(--purple-100) !important;
   color: black;
+  pointer-events: none;
+  cursor: default;
 }
-
+.breadcrumb .breadcrumb__item:last-child .breadcrumb__link:after {
+  border-left-color: var(--purple-100) !important;
+}
 .breadcrumb .breadcrumb__link:hover {
-  color: var(--dark-grey);
+  background: var(--purple-700) !important;
 }
-
-.breadcrumb .breadcrumb__link--active:link,
-.breadcrumb .breadcrumb__link--active:visited {
-  color: var(--active-text);
-}
-
-.breadcrumb .breadcrumb__link--active:hover {
-  color: var(--active-text-hover);
+.breadcrumb .breadcrumb__link:hover:after {
+  border-left-color: var(--purple-700) !important;
 }

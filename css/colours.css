@@ -1,12 +1,15 @@
 :root {
-  --purple-500: #5e408e;
+  --purple-700: #5e408e;
+  --purple-500: #845ec2;
   --purple-300: #b39cd0;
-  --green: #008e9b;
+  --purple-100: #fbeaff;
+  --green-300: #00c9a7;
+  --green-500: #008e9b;
   --dark-grey: #4b4453;
   --light-grey: #b0a8b9;
 
-  --bg-gradient-start: var(--purple-500);
-  --bg-gradient-end: var(--green);
+  --bg-gradient-start: var(--purple-700);
+  --bg-gradient-end: var(--green-500);
   --active-text: var(--purple-500);
   --active-text-hover: var(--purple-300);
 }
