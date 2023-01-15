@@ -1,0 +1,25 @@
+.header {
+  width: 680px;
+  margin: 0 auto;
+}
+
+.header .header__profile {
+  overflow: hidden;
+  margin: 4px;
+  height: 128px;
+  border-radius: 50%;
+}
+
+.header .header__link {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.header .header__link:link,
+.header .header__link:visited {
+  color: black;
+}
+
+.header .header__link:hover {
+  color: #878f99;
+}
