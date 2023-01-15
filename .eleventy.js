@@ -1,12 +1,13 @@
 const Image = require("@11ty/eleventy-img");
 
-function eleventyImage(className, type, year, imagePath, widths) {
+function eleventyImage(className, path, imagePath, widths) {
   let outputFormat = "jpeg";
+  console.log(`img/${path}/${imagePath}`);
   return Image(`${imagePath}`, {
     widths: widths,
     formats: [outputFormat],
-    urlPath: `img/${type}/${year}`,
-    outputDir: `_site/dist/img/${type}/${year}`,
+    urlPath: `img/${path}`,
+    outputDir: `_site/dist/img/${path}`,
   }).then(function (props) {
     let lowestSrc = props[outputFormat][0];
 
@@ -36,19 +37,22 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addLiquidShortcode("galleryThumbnailImage", function (
     type,
     year,
-    fileName
+    imagePath
   ) {
-    return eleventyImage("gallery__thumbnailimage", type, year, fileName, [
-      300,
-    ]);
+    return eleventyImage(
+      "gallery__thumbnailimage",
+      `${type}/${year}`,
+      imagePath,
+      [300]
+    );
   });
 
   eleventyConfig.addLiquidShortcode("imageDetail", function (
     type,
     year,
-    fileName
+    imagePath
   ) {
-    return eleventyImage("image-detail__image", type, year, fileName, [
+    return eleventyImage("image-detail__image", `${type}/${year}`, imagePath, [
       null,
       1280,
       1040,
@@ -56,35 +60,13 @@ module.exports = function (eleventyConfig) {
     ]);
   });
 
-  eleventyConfig.addLiquidShortcode("assets", function (imagePath, className) {
-    let outputFormat = "jpeg";
-    return Image(`img/assets/${imagePath}.${outputFormat}`, {
-      widths: [300],
-      formats: [outputFormat],
-      urlPath: `img/assets`,
-      outputDir: `_site/dist/img/assets`,
-    }).then(function (props) {
-      let lowestSrc = props[outputFormat][0];
-
-      // Iterate over formats and widths
-      let sources = `<source
-        type="image/${lowestSrc.format}"
-        srcset="${Object.values(props).map((imageFormat) => {
-          return imageFormat
-            .map((image) => {
-              return `/dist/${image.url} ${image.width}w`;
-            })
-            .join(", ");
-        })}"
-        sizes="100vw">`;
-
-      return `<picture>
-        ${sources}
-          <img src="/dist/${lowestSrc.url}"
-            alt="${lowestSrc.url}"
-            class="${className}">
-        </picture>`;
-    });
+  eleventyConfig.addLiquidShortcode("assets", function (imageName, className) {
+    return eleventyImage(
+      className,
+      "assets",
+      `./img/assets/${imageName}.jpeg`,
+      [300]
+    );
   });
 
   // Eleventy Options
