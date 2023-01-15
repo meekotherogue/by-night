@@ -1,0 +1,14 @@
+{% assign breadcrumb = collections.all | eleventyNavigationBreadcrumb: eleventyNavigation.key, navOptions %}
+<div
+  class="breadcrumb">
+  {%- for entry in breadcrumb %}
+    <div
+      class="breadcrumb__item">
+      <a
+        class="breadcrumb__link {% if entry.url == page.url %}breadcrumb__link--active{% endif %}"
+        href="{{ entry.url }}">
+        {{ entry.title }}
+      </a>
+    </div>
+  {%- endfor %}
+</div>

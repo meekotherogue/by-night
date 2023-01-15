@@ -1,7 +1,7 @@
 {% layout root.liquid %}
 {% block content %}
   {% include header %}
+  {% include breadcrumb %}
   {% include content %}
-  {% assign items = site.siteMap[type] %}
   {% include picker %}
 {% endblock %}

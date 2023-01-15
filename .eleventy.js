@@ -1,8 +1,8 @@
 const Image = require("@11ty/eleventy-img");
+const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 
 function eleventyImage(className, path, imagePath, widths) {
   let outputFormat = "jpeg";
-  console.log(`img/${path}/${imagePath}`);
   return Image(`${imagePath}`, {
     widths: widths,
     formats: [outputFormat],
@@ -33,7 +33,7 @@ function eleventyImage(className, path, imagePath, widths) {
 }
 
 module.exports = function (eleventyConfig) {
-  // Javascript
+  // Shortcodes
   eleventyConfig.addLiquidShortcode("galleryThumbnailImage", function (
     type,
     year,
@@ -68,6 +68,9 @@ module.exports = function (eleventyConfig) {
       [300]
     );
   });
+
+  // Navigation
+  eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
   // Eleventy Options
   eleventyConfig.setLiquidOptions({

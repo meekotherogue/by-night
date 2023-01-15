@@ -1,7 +1,8 @@
+{% assign items = collections.all | eleventyNavigation: eleventyNavigation.key %}
 <div class="picker">
   {%- for item in items -%}
     <div class="picker__item">
-      <a class="picker__link" href="{{ item.href }}">{{ item.title }}</a>
+      <a class="picker__link" href="{{ item.url }}">{{ item.title }}</a>
     </div>
   {%- endfor -%}
 </div>

@@ -2,6 +2,8 @@
 title: Artist by night
 layout: landing-page.liquid
 type: index
+eleventyNavigation:
+  key: Home
 ---
 
 Welcome to my art gallery website!
