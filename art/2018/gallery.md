@@ -1,5 +1,5 @@
 ---
-title: Art
+title: Artwork
 layout: art/gallery2018.liquid
 type: art
 year: 2018

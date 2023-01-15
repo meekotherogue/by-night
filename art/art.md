@@ -1,5 +1,5 @@
 ---
-title: Art
+title: Artwork
 layout: year-picker.liquid
 type: art
 ---

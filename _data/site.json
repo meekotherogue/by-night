@@ -1,3 +1,13 @@
 {
-  "title": "By Night"
+  "title": "By Night",
+  "index": [
+    {
+      "title": "Artwork",
+      "href": "/art"
+    },
+    {
+      "title": "Drawings, Sketches, and Studies",
+      "href": "/drawings"
+    }
+  ]
 }

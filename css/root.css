@@ -55,6 +55,11 @@
   background-color: rgba(255, 255, 255, 0.8);
   color: rgb(0, 0, 0);
   box-shadow: rgb(10 11 13 / 8%) 0px 2px 4px 0px;
+  transition: transform 0.15s cubic-bezier(0, 0.2, 0.5, 3) 0s;
+}
+
+.picker .picker__item:hover {
+  transform: scale(1.02);
 }
 
 .picker .picker__link {

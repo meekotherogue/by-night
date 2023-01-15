@@ -1,5 +1,5 @@
 ---
-title: Drawings
+title: Drawings, Sketches, and Studies
 layout: drawings/gallery2018.liquid
 type: drawings
 year: 2018

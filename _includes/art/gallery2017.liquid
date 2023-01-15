@@ -2,5 +2,8 @@
 permalink: /{{ type }}/{{ year }}/index.html
 ---
 
-{% layout root.liquid %} {% block content %} {% assign images = art2017 %} {%
-include gallery %} {% endblock %}
+{% layout root.liquid %}
+{% block content %}
+  {% assign images = art2017 %}
+  {% include gallery %}
+{% endblock %}
