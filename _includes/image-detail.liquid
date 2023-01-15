@@ -4,9 +4,37 @@ permalink: /{{ image.type }}/{{ image.year }}/{{ image.index }}/index.html
 
 {% layout root.liquid %}
 {% block content %}
-  <div class="image-modal">
-    <div class="image-detail">
+  <div
+    class="image-modal">
+    <div
+      class="image-detail">
       {% imageDetail image.type image.year image.file %}
+    </div>
+  </div>
+  <div
+    class="image-overlay">
+    <div
+      class="pure-g">
+      <div
+        class="pure-u-1-2">
+        {% if pagination.href.previous %}
+          <a
+            class="image-overlay__link image-overlay__link--left"
+            href="{{ pagination.href.previous }}"></a>
+          <i
+            class="image-overlay__arrow image-overlay__arrow--left"></i>
+        {% endif %}
+      </div>
+      <div
+        class="pure-u-1-2">
+        {% if pagination.href.next %}
+          <a
+            class="image-overlay__link image-overlay__link--right"
+            href="{{ pagination.href.next }}"></a>
+          <i
+            class="image-overlay__arrow image-overlay__arrow--right"></i>
+        {% endif %}
+      </div>
     </div>
   </div>
 {% endblock %}
