@@ -1,5 +1,7 @@
 _site
 node_modules
 node_modules/*
+org
+org/*
 
 .DS_Store
