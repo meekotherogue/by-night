@@ -41,9 +41,13 @@ then
   is_new_type=0
 else
   is_new_type=1
+  mkdir "$type_out_dir"
 fi
 
-echo "is new: ${is_new_type}"
+mkdir "$subtype_out_dir"
+
+echo "\nOptimising images...\n"
+echo "sh ./scripts/optimize_images.bash ${image_dir} ${subtype_out_dir}\n"
 
 # for file in $dir*
 # do
