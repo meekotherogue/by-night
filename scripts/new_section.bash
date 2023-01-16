@@ -11,6 +11,11 @@ read out
 echo "\nDefault description (or empty to auto generate):"
 read desc
 
+if [ -z "$out" ] 
+then
+    out="img"
+fi
+
 echo "\n\nEntered: ${type} ${subtype} ${src} ${out} ${desc} OK? [y/n]"
 read confirm
 
@@ -45,6 +50,11 @@ else
   mkdir "$type_out_dir"
 fi
 
+if [ -z "$desc"]
+then
+  desc="Art for ${type} from ${subtype}"
+fi
+
 echo "Making subtype directory ${subtype_out_dir}\n"
 mkdir "$subtype_out_dir"
 
@@ -55,6 +65,11 @@ sh ./scripts/optimize_images.bash ${image_dir} ${subtype_out_dir}
 echo "\nWatermarking images...\n"
 echo "sh ./scripts/watermark.bash ${subtype_out_dir} img/assets/watermark.png\n"
 sh ./scripts/watermark.bash ${subtype_out_dir} img/assets/watermark.png
+
+echo "\nGenerating metadata...\n"
+meta_out="./_data/${type}Meta${subtype}.json"
+echo "sh ./scripts/generate_meta_json.bash ${subtype_out_dir} \"${desc}\" ${subtype} ${meta_out}\n"
+sh ./scripts/generate_meta_json.bash ${subtype_out_dir} "${desc}" ${subtype} ${meta_out}
 
 # for file in $dir*
 # do
