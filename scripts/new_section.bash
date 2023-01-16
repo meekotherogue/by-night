@@ -6,13 +6,23 @@ function replace_types() {
   new_type=$3
   old_subtype=$4
   new_subtype=$5
+  old_caps_type=$6
+  new_caps_type=$6
+  old_title=$7
+  new_title=$8
 
   sed -i.bak "s/${old_type}/${new_type}/g" ${filename}
   sed -i.bak "s/${old_subtype}/${new_subtype}/g" ${filename}
+  sed -i.bak "s/${old_title}/${new_title}/g" ${filename}
+  sed -i.bak "s/${old_caps_type}/${new_caps_type}/g" ${filename}
 }
 
 echo "\nSpecify type:"
 read type
+echo "\nNow with a capital:"
+read caps_type
+echo "\nLong title:"
+read title
 echo "\nSpecify new subtype:"
 read subtype
 echo "\nSpecify image source directory (orig or img):"
@@ -84,12 +94,14 @@ sh ./scripts/generate_meta_json.bash ${subtype_out_dir} "${desc}" ${subtype} ${m
 
 old_type="art"
 old_subtype="2017"
+old_caps_type="Art"
+old_title="Artwork"
 echo "\nCreating templates from ${old_type} and ${old_subtype}...\n"
 
 new_data_file="_data/${type}${subtype}.js"
 echo "Creating ${new_data_file}"
 cp _data/${old_type}$old_subtype.js ${new_data_file}
-replace_types $new_data_file $old_type $type $old_subtype $subtype 
+replace_types $new_data_file $old_type $type $old_subtype $subtype $old_caps_type $caps_type $old_title $title 
 
 echo "Creating markdown..."
 if [ "$is_new_type" = 1 ]
@@ -97,14 +109,14 @@ then
   mkdir "$type"
   new_base_markdown_file="${type}/${type}.md"
   cp "${old_type}/${old_type}.md" ${new_base_markdown_file}
-  replace_types $new_base_markdown_file $old_type $type $old_subtype $subtype
+  replace_types $new_base_markdown_file $old_type $type $old_subtype $subtype $old_caps_type $caps_type $old_title $title
 fi
 new_markdown_dir="$type/$subtype"
 mkdir "$new_markdown_dir"
 cp "${old_type}/${old_subtype}/image-detail.md" ${new_markdown_dir}
-replace_types "${new_markdown_dir}/image-detail.md" $old_type $type $old_subtype $subtype
+replace_types "${new_markdown_dir}/image-detail.md" $old_type $type $old_subtype $subtype $old_caps_type $caps_type $old_title $title
 cp "${old_type}/${old_subtype}/gallery.md" ${new_markdown_dir}
-replace_types "${new_markdown_dir}/gallery.md" $old_type $type $old_subtype $subtype
+replace_types "${new_markdown_dir}/gallery.md" $old_type $type $old_subtype $subtype $old_caps_type $caps_type $old_title $title
 
 echo "Creating template..."
 new_template_dir="_includes/${type}"
@@ -114,7 +126,7 @@ then
 fi
 new_template_file="${new_template_dir}/gallery${subtype}.liquid"
 cp "_includes/${old_type}/gallery${old_subtype}.liquid" "${new_template_file}"
-replace_types $new_template_file $old_type $type $old_subtype $subtype
+replace_types $new_template_file $old_type $type $old_subtype $subtype $old_caps_type $caps_type $old_title $title
 
 echo "Cleanup"
 find . -name *.bak -exec rm {} \;
