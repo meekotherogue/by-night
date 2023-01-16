@@ -96,7 +96,7 @@ if [ "$is_new_type" = 1 ]
 then
   mkdir "$type"
   new_base_markdown_file="${type}/${type}.md"
-  cp "${old_type}/${old_type}.md" ${type}
+  cp "${old_type}/${old_type}.md" ${new_base_markdown_file}
   replace_types $new_base_markdown_file $old_type $type $old_subtype $subtype
 fi
 new_markdown_dir="$type/$subtype"
