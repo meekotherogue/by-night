@@ -4,6 +4,8 @@ permalink: /{{ image.type }}/{{ image.year }}/{{ image.index }}/index.html
 
 {% layout root.liquid %}
 {% block content %}
+  {% assign nav = collections.all | eleventyNavigationBreadcrumb: eleventyNavigation.key, navOptions %}
+  {% assign parent = nav | last %}
   <div
     class="image-modal">
     <div
@@ -15,7 +17,7 @@ permalink: /{{ image.type }}/{{ image.year }}/{{ image.index }}/index.html
     class="image-overlay">
     <a
       class=""
-      href="{{ pagination.href.next }}">
+      href="{{ parent.url }}">
       <div
         class="image-overlay__close"></div>
     </a>
