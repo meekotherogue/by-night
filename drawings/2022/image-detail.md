@@ -6,6 +6,6 @@ pagination:
   alias: image
 component: image-detail
 eleventyNavigation:
-  key: DrawingDetail2022
+  key: DrawingsDetail2022
   parent: DrawingsGallery2022
 ---

@@ -1,12 +1,12 @@
 ---
-title: Artwork
+title: Drawings, Sketches, and Studies
 layout: drawings/gallery2021.liquid
 type: drawings
 year: 2021
 component: gallery
 eleventyNavigation:
-  key: ArtGallery2021
-  parent: Art
+  key: DrawingsGallery2021
+  parent: Drawings
   title: 2021
   order: 2
 navOptions:
