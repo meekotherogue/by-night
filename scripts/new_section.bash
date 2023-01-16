@@ -71,7 +71,7 @@ else
   mkdir "$type_out_dir"
 fi
 
-if [ -z "$desc"]
+if [ -z "$desc" ]
 then
   desc="Art for ${type} from ${subtype}"
 fi
