@@ -28,9 +28,10 @@ permalink: /{{ image.type }}/{{ image.year }}/{{ image.index }}/index.html
         {% if pagination.href.previous %}
           <a
             class="image-overlay__link image-overlay__link--left"
-            href="{{ pagination.href.previous }}"></a>
-          <i
-            class="image-overlay__arrow image-overlay__arrow--left"></i>
+            href="{{ pagination.href.previous }}">
+            <i
+              class="image-overlay__arrow image-overlay__arrow--left"></i>
+          </a>
         {% endif %}
       </div>
       <div
@@ -38,9 +39,10 @@ permalink: /{{ image.type }}/{{ image.year }}/{{ image.index }}/index.html
         {% if pagination.href.next %}
           <a
             class="image-overlay__link image-overlay__link--right"
-            href="{{ pagination.href.next }}"></a>
-          <i
-            class="image-overlay__arrow image-overlay__arrow--right"></i>
+            href="{{ pagination.href.next }}">
+            <i
+              class="image-overlay__arrow image-overlay__arrow--right"></i>
+          </a>
         {% endif %}
       </div>
     </div>
