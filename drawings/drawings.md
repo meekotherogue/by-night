@@ -6,7 +6,7 @@ eleventyNavigation:
   key: Drawings
   title: Drawings, Sketches, and Studies
   parent: Home
-  order: 2
+  order: 3
 navOptions:
   includeSelf: true
 ---
