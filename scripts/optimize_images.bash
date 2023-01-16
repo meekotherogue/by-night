@@ -3,7 +3,7 @@
 dir=$1
 out_dir=$2
 
-if [ -z "$out_dir"]
+if [ -z "$out_dir" ]
 then
   out_dir="${dir}"
 fi
