@@ -20,9 +20,9 @@ case "$confirm" in
   * ) exit;;
 esac
 
-image_dir="${src}/${type}/${subtype}"
-type_out_dir="${out}/${type}"
-subtype_out_dir="${out}/${type}/${subtype}"
+image_dir="${src}/${type}/${subtype}/"
+type_out_dir="${out}/${type}/"
+subtype_out_dir="${out}/${type}/${subtype}/"
 
 if [ ! -d "$image_dir" ] 
 then
@@ -41,13 +41,20 @@ then
   is_new_type=0
 else
   is_new_type=1
+  echo "Making type directory ${type_out_dir}\n"
   mkdir "$type_out_dir"
 fi
 
+echo "Making subtype directory ${subtype_out_dir}\n"
 mkdir "$subtype_out_dir"
 
 echo "\nOptimising images...\n"
 echo "sh ./scripts/optimize_images.bash ${image_dir} ${subtype_out_dir}\n"
+sh ./scripts/optimize_images.bash ${image_dir} ${subtype_out_dir}
+
+echo "\nWatermarking images...\n"
+echo "sh ./scripts/watermark.bash ${subtype_out_dir} img/assets/watermark.png\n"
+sh ./scripts/watermark.bash ${subtype_out_dir} img/assets/watermark.png
 
 # for file in $dir*
 # do
