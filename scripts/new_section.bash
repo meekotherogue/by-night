@@ -115,3 +115,6 @@ fi
 new_template_file="${new_template_dir}/gallery${subtype}.liquid"
 cp "_includes/${old_type}/gallery${old_subtype}.liquid" "${new_template_file}"
 replace_types $new_template_file $old_type $type $old_subtype $subtype
+
+echo "Cleanup"
+find . -name *.bak -exec rm {} \;
