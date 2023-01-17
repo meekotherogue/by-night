@@ -1,0 +1,9 @@
+---
+permalink: /{{ type }}/{{ year }}/index.html
+---
+
+{% layout root.liquid %}
+{% block content %}
+  {% assign images = art2019 %}
+  {% include gallery %}
+{% endblock %}
