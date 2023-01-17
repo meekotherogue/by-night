@@ -2,6 +2,7 @@
 @import "picker.css";
 @import "breadcrumb.css";
 @import "colours.css";
+@import "about.css";
 
 .root {
   display: flex;
