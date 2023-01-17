@@ -1,5 +1,7 @@
 .about {
   text-align: left;
+  font-size: calc(1rem + 1vw);
+  line-height: 1.5;
 }
 
 .about h2 {

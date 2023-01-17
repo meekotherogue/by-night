@@ -5,6 +5,7 @@
   list-style: none;
   overflow: hidden;
   padding-left: 0px;
+  font-size: calc(1rem + 1vw);
 }
 
 .breadcrumb .breadcrumb__item {
