@@ -16,7 +16,7 @@ permalink: /{{ image.type }}/{{ image.year }}/{{ image.index }}/index.html
   <div
     class="image-overlay">
     <a
-      class=""
+      id="imageDetailEscape"
       href="{{ parent.url }}">
       <div
         class="image-overlay__close"></div>
@@ -27,6 +27,7 @@ permalink: /{{ image.type }}/{{ image.year }}/{{ image.index }}/index.html
         class="pure-u-1-2">
         {% if pagination.href.previous %}
           <a
+            id="imageDetailLeftArrow"
             class="image-overlay__link image-overlay__link--left"
             href="{{ pagination.href.previous }}">
             <i
@@ -38,6 +39,7 @@ permalink: /{{ image.type }}/{{ image.year }}/{{ image.index }}/index.html
         class="pure-u-1-2">
         {% if pagination.href.next %}
           <a
+            id="imageDetailRightArrow"
             class="image-overlay__link image-overlay__link--right"
             href="{{ pagination.href.next }}">
             <i
