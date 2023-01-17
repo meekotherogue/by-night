@@ -6,9 +6,9 @@ year: 2019
 component: gallery
 eleventyNavigation:
   key: DrawingsGallery2019
-  parent: Art
+  parent: Drawings
   title: 2019
-  order: 2
+  order: 4
 navOptions:
   includeSelf: true
 ---
