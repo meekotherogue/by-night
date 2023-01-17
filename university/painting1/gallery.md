@@ -1,5 +1,5 @@
 ---
-title: University
+title: Painting I
 layout: university/galleryPainting1.liquid
 type: university
 year: painting1
