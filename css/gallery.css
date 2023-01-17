@@ -1,7 +1,6 @@
 .gallery {
   max-width: 1024px;
   margin: 0 auto;
-  font-size: calc(1rem + 1vw);
 }
 
 .gallery__thumbnail {
