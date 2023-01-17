@@ -16,7 +16,7 @@ Hey everyone! My name is Martina Rauert. If you've reached this page, I assume y
 
 I grew up in a city called Prince Albert, in Saskatchewan Canada, with my mom, sister, stepdad, and cats Snickers and Jasper and dog Simba. I went to high school at the largest school in the province and graduated in 2007.
 
-I have since moved to the city of Saskatoon. I went to the University of Saskatchewan and received my Bachelor of Science in Computer Science. It's also where I met my now husband, where our shared love of punk rock, sci-fi and fantasy, dry humour and introversion, and of course computers brought us together. We convocated on the same day in 2013.
+I have since moved to the city of Saskatoon. I went to the University of Saskatchewan and received my Bachelor of Science in Computer Science. It's also where I met my now husband, where our shared love of punk rock, sci-fi and fantasy, dry humour and introversion, and of course computers brought us together. We convocated on the same day in 2013, got married in 2018, and share our house with our 2 cats Coco and Sadie!
 
 As a developer, I enjoy the problem solving aspect as a whole as well as playing around with new technologies. The world is my oyster! I even developed the website you see before you myself! I used a static site generator to build all of the galleries and image details pages you see here, as well as all of the image processing and watermarking.
 
@@ -34,7 +34,7 @@ I was shocked, I remember asking my mom over and over again why my grandparents 
 
 It's a small anecdote, but it had a poignant effect on my artistic pursuits for over 15 years. I thought if I could do perfect art, then I could one day become an artist. But striving for this perfection sucked out a lot of the joy I used to find in it. Instead, it was replaced with anxiety and disappointment when it didn’t turn out just right. And, obviously, I ended up choosing an entirely different profession as a result.
 
-While I'm proud of a lot of the work I created in that time, once university ended I had no motivation to put myself through that tedium in my free time. I did an odd piece here or there, and not to say it was completely joyless, but it just brought up the old anxiety of getting it _just_ right.
+While I'm proud of a lot of the artwork I created in that time, once university ended I had no motivation to put myself through that tedium in my free time. I did an odd piece here or there, and not to say it was completely joyless, but it just brought up the old anxiety of getting it _just_ right.
 
 Then in 2017 I had had enough! I decided to challenge myself by making a goal to do a drawing a day, and a painting a week for the whole year. It was an effort to detach myself from the need for perfection, and also to try and rediscover if I did actually still have a passion for art.
 

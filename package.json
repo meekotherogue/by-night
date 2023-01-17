@@ -4,10 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:prod": "npm install && npm run-script build",
+    "build:prod": "npm install && npm run-script build && npm run-script minify:js",
     "build": "npx @11ty/eleventy --formats=liquid,html,md,json,gif,jpg",
     "serve": "npx @11ty/eleventy --formats=liquid,html,md,json,gif,jpg --serve",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "minify:js": "terser js/event-listeners.js --compress --mangle -o _site/js/event-listeners.min.js"
   },
   "keywords": [],
   "author": "",
@@ -18,6 +19,7 @@
     "jslint": "^0.12.1"
   },
   "dependencies": {
-    "@11ty/eleventy-img": "^2.0.1"
+    "@11ty/eleventy-img": "^2.0.1",
+    "terser": "^5.16.1"
   }
 }

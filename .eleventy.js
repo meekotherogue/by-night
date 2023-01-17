@@ -1,5 +1,6 @@
 const Image = require("@11ty/eleventy-img");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+const { minify } = require("terser");
 
 function eleventyImage(className, path, imagePath, widths) {
   let outputFormat = "jpeg";
@@ -81,7 +82,7 @@ module.exports = function (eleventyConfig) {
 
   // Passthrough Copy
   eleventyConfig.addPassthroughCopy("css");
-  eleventyConfig.addPassthroughCopy("js");
+
   return {
     passthroughFileCopy: true,
   };
