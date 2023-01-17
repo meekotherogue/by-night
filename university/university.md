@@ -1,12 +1,12 @@
 ---
-title: University
+title: University Artwork (2007 - 2013)
 layout: landing-page.liquid
 type: university
 eleventyNavigation:
   key: University
-  title: University
+  title: University Artwork
   parent: Home
-  order: 2
+  order: 4
 navOptions:
   includeSelf: true
 ---

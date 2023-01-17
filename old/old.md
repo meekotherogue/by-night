@@ -1,12 +1,12 @@
 ---
-title: Old
+title: Old Artwork (1995 - 2007)
 layout: landing-page.liquid
 type: old
 eleventyNavigation:
   key: Old
-  title: Old
+  title: Old Artwork
   parent: Home
-  order: 2
+  order: 5
 navOptions:
   includeSelf: true
 ---

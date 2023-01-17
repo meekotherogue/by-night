@@ -7,8 +7,8 @@ component: gallery
 eleventyNavigation:
   key: UniversityGalleryDrawing1
   parent: University
-  title: drawing1
-  order: 6
+  title: Drawing I
+  order: 1
 navOptions:
   includeSelf: true
 ---

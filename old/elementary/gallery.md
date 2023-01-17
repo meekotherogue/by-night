@@ -1,5 +1,5 @@
 ---
-title: Old
+title: Elementary School Art (1995 - 2001)
 layout: old/galleryElementary.liquid
 type: old
 year: elementary
@@ -8,7 +8,7 @@ eleventyNavigation:
   key: OldGalleryElementary
   parent: Old
   title: Elementary
-  order: 6
+  order: 3
 navOptions:
   includeSelf: true
 ---

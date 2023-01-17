@@ -4,7 +4,7 @@ layout: landing-page.liquid
 type: art
 eleventyNavigation:
   key: Art
-  title: Artwork
+  title: Personal Artwork
   parent: Home
   order: 2
 navOptions:

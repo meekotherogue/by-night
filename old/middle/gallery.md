@@ -1,5 +1,5 @@
 ---
-title: Old
+title: Middle School Art (2001 - 2004)
 layout: old/galleryMiddle.liquid
 type: old
 year: middle
@@ -8,7 +8,7 @@ eleventyNavigation:
   key: OldGalleryMiddle
   parent: Old
   title: middle
-  order: 6
+  order: 2
 navOptions:
   includeSelf: true
 ---

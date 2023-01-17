@@ -1,5 +1,5 @@
 ---
-title: Old
+title: High School Art (2004 - 2007)
 layout: old/galleryHigh.liquid
 type: old
 year: high
@@ -8,7 +8,7 @@ eleventyNavigation:
   key: OldGalleryHigh
   parent: Old
   title: High
-  order: 6
+  order: 1
 navOptions:
   includeSelf: true
 ---
