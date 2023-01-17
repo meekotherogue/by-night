@@ -1,11 +1,11 @@
 ---
 layout: image-detail.liquid
 pagination:
-  data: universitydrawing2
+  data: universityDrawing2
   size: 1
   alias: image
 component: image-detail
 eleventyNavigation:
-  key: UniversityDetaildrawing2
-  parent: UniversityGallerydrawing2
+  key: UniversityDetailDrawing2
+  parent: UniversityGalleryDrawing2
 ---

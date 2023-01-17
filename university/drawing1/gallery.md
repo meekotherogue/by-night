@@ -1,11 +1,11 @@
 ---
 title: University
-layout: university/gallerydrawing1.liquid
+layout: university/galleryDrawing1.liquid
 type: university
 year: drawing1
 component: gallery
 eleventyNavigation:
-  key: UniversityGallerydrawing1
+  key: UniversityGalleryDrawing1
   parent: University
   title: drawing1
   order: 6
