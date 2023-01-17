@@ -10,15 +10,9 @@
   border-radius: 8px;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 1023px) {
   .gallery__thumbnail {
     height: 640px;
-  }
-}
-
-@media (min-width: 551px) {
-  .gallery__thumbnail {
-    height: 320px;
   }
 }
 

@@ -19,17 +19,17 @@
   position: relative;
   display: block;
   float: left;
+  font-size: 1em;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 1023px) {
+  .breadcrumb {
+    width: 100%;
+    max-width: 100%;
+  }
+
   .breadcrumb .breadcrumb__link {
     font-size: 1.5em;
-  }
-}
-
-@media (min-width: 551px) {
-  .breadcrumb .breadcrumb__link {
-    font-size: 1em;
   }
 }
 

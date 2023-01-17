@@ -26,17 +26,17 @@
   display: block;
   cursor: pointer;
   text-decoration: none;
+  font-size: 1rem;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 1023px) {
   .picker .picker__link {
     font-size: 2em;
   }
-}
 
-@media (min-width: 551px) {
-  .picker .picker__link {
-    font-size: 1rem;
+  .picker {
+    width: 100%;
+    max-width: 100%;
   }
 }
 
