@@ -1,11 +1,11 @@
 ---
 layout: image-detail.liquid
 pagination:
-  data: oldmiddle
+  data: oldMiddle
   size: 1
   alias: image
 component: image-detail
 eleventyNavigation:
-  key: OldDetailmiddle
-  parent: OldGallerymiddle
+  key: OldDetailMiddle
+  parent: OldGalleryMiddle
 ---

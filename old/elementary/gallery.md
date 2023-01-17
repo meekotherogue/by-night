@@ -1,16 +1,16 @@
 ---
 title: Old
-layout: old/galleryelementary.liquid
+layout: old/galleryElementary.liquid
 type: old
 year: elementary
 component: gallery
 eleventyNavigation:
-  key: OldGalleryelementary
+  key: OldGalleryElementary
   parent: Old
-  title: elementary
+  title: Elementary
   order: 6
 navOptions:
   includeSelf: true
 ---
 
-Here is the collection of completed drawings and paintings I have done in elementary
+Here is the collection of completed drawings and paintings I have done in Elementary

@@ -1,11 +1,11 @@
 ---
 title: Old
-layout: old/gallerymiddle.liquid
+layout: old/galleryMiddle.liquid
 type: old
 year: middle
 component: gallery
 eleventyNavigation:
-  key: OldGallerymiddle
+  key: OldGalleryMiddle
   parent: Old
   title: middle
   order: 6

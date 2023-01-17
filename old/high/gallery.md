@@ -1,16 +1,16 @@
 ---
 title: Old
-layout: old/galleryhigh.liquid
+layout: old/galleryHigh.liquid
 type: old
 year: high
 component: gallery
 eleventyNavigation:
-  key: OldGalleryhigh
+  key: OldGalleryHigh
   parent: Old
-  title: high
+  title: High
   order: 6
 navOptions:
   includeSelf: true
 ---
 
-Here is the collection of completed drawings and paintings I have done in high
+Here is the collection of completed drawings and paintings I have done in High
