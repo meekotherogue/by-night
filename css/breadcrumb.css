@@ -27,10 +27,6 @@
     width: 100%;
     max-width: 100%;
   }
-
-  .breadcrumb .breadcrumb__link {
-    font-size: 1.5em;
-  }
 }
 
 .breadcrumb .breadcrumb__link:after {
