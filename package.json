@@ -8,7 +8,7 @@
     "build": "npx @11ty/eleventy --formats=liquid,html,md,json,gif,jpg",
     "serve": "npx @11ty/eleventy --formats=liquid,html,md,json,gif,jpg --serve",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "minify:js": "terser js/event-listeners.js --compress --mangle -o _site/js/event-listeners.min.js"
+    "minify:js": "terser js/event-listeners.js -o _site/js/event-listeners.js"
   },
   "keywords": [],
   "author": "",
