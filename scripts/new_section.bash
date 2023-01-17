@@ -7,9 +7,9 @@ function replace_types() {
   old_subtype=$4
   new_subtype=$5
   old_caps_type=$6
-  new_caps_type=$6
-  old_title=$7
-  new_title=$8
+  new_caps_type=$7
+  old_title=$8
+  new_title=$9
 
   sed -i.bak "s/${old_type}/${new_type}/g" ${filename}
   sed -i.bak "s/${old_subtype}/${new_subtype}/g" ${filename}
