@@ -1,5 +1,5 @@
 ---
-title: My
+title: Personal Favourites
 layout: favourites/gallerySketches.liquid
 type: favourites
 year: Sketches
@@ -8,9 +8,11 @@ eleventyNavigation:
   key: FavouritesGallerySketches
   parent: Favourites
   title: Sketches
-  order: 6
+  order: 3
 navOptions:
   includeSelf: true
 ---
 
-Here is the collection of completed drawings and paintings I have done in Sketches
+Here is a collection of my personal favourite sketches in no particular order
+
+These are incomplete works that I just love regardless of their technical prowess!
