@@ -28,6 +28,18 @@
   text-decoration: none;
 }
 
+@media (max-width: 550px) {
+  .picker .picker__link {
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 551px) {
+  .picker .picker__link {
+    font-size: 1rem;
+  }
+}
+
 .picker .picker__link:link,
 .picker .picker__link:visited {
   color: black;

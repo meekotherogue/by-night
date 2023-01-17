@@ -21,6 +21,18 @@
   float: left;
 }
 
+@media (max-width: 550px) {
+  .breadcrumb .breadcrumb__link {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 551px) {
+  .breadcrumb .breadcrumb__link {
+    font-size: 1em;
+  }
+}
+
 .breadcrumb .breadcrumb__link:after {
   content: " ";
   display: block;

@@ -4,11 +4,35 @@
   margin: 0 auto;
 }
 
+@media (max-width: 550px) {
+  .header {
+    font-size: 1.5em;
+  }
+}
+
+@media (min-width: 551px) {
+  .header {
+    font-size: 1em;
+  }
+}
+
 .header .header__profile {
   overflow: hidden;
   margin: 4px;
   height: 128px;
   border-radius: 50%;
+}
+
+@media (max-width: 550px) {
+  .header .header__profile {
+    height: 256px;
+  }
+}
+
+@media (min-width: 551px) {
+  .header .header__profile {
+    height: 128px;
+  }
 }
 
 .header .header__link {

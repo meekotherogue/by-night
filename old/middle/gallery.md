@@ -7,10 +7,10 @@ component: gallery
 eleventyNavigation:
   key: OldGalleryMiddle
   parent: Old
-  title: middle
+  title: Middle
   order: 2
 navOptions:
   includeSelf: true
 ---
 
-Here is the collection of completed drawings and paintings I have done in middle
+Here is the collection of completed drawings and paintings I have done in middle school
