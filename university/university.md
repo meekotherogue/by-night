@@ -11,4 +11,4 @@ navOptions:
   includeSelf: true
 ---
 
-Here is the collection of completed drawings and paintings I have done post university, and are sorted by year they were completed.
+This is the collection of art I produced when attending the University of Saskatchewan. I took a number of courses in art even though it was not my major.

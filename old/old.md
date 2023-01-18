@@ -11,4 +11,4 @@ navOptions:
   includeSelf: true
 ---
 
-Here is the collection of completed drawings and paintings I have done post university, and are sorted by year they were completed.
+Here is the collection of my oldest artwork that I have a record of! Dating from between 1997 and 2007.
