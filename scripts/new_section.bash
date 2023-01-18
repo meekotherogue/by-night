@@ -1,9 +1,11 @@
 #! /bin/bash
 
 echo "\nSpecify type:"
-read type
+# read type
+type="new"
 echo "\nLong title:"
-read title
+# read title
+title="✨ New ✨"
 echo "\nSpecify new subtype:"
 read subtype
 # echo "\nSpecify image source directory (orig or img):"
@@ -11,7 +13,8 @@ read subtype
 # echo "\nSpecify image output directory (img):"
 # read out
 echo "\nDefault description (or empty to auto generate):"
-read desc
+# read desc
+desc="The latest works from me"
 
 if [ -z "$out" ] 
 then
