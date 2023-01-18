@@ -13,6 +13,6 @@ navOptions:
   includeSelf: true
 ---
 
-Here is a collection of my personal favourite paintings in no particular order
+Here is a collection of my personal favourite paintings in no particular order.
 
-These are completed works done with traditional mediums such as acrylic and watercolour paints, as well as acrylic pouring mediums
+These are completed works done with traditional mediums such as acrylic and watercolour paints, as well as acrylic pouring mediums.
