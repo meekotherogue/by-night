@@ -19,7 +19,7 @@ new_data_file="_data/${type}${caps_subtype}.js"
 echo "Creating ${new_data_file}"
 echo "cp _data/${old_type}$old_subtype.js ${new_data_file}"
 cp _data/${old_type}$old_subtype.js ${new_data_file}
-sh ./scripts/replace_types.bash $new_data_file $type $caps_subtype $caps_type "$title"
+sh ./scripts/replace_types.bash "$new_data_file" "$type" "$caps_subtype" "$caps_type" "$title"
 
 echo "Creating markdown..."
 if [ "$is_new_type" = 1 ]
@@ -27,7 +27,7 @@ then
   mkdir "$type"
   new_base_markdown_file="${type}/${type}.md"
   cp "${old_type}/${old_type}.md" ${new_base_markdown_file}
-  sh ./scripts/replace_types.bash $new_base_markdown_file $type $caps_subtype $caps_type "$title"
+  sh ./scripts/replace_types.bash "$new_base_markdown_file" "$type" "$caps_subtype" "$caps_type" "$title"
 fi
 new_markdown_dir="$type/$subtype"
 mkdir "$new_markdown_dir"
@@ -44,7 +44,7 @@ then
 fi
 new_template_file="${new_template_dir}/gallery${caps_subtype}.liquid"
 cp "_includes/${old_type}/gallery${old_subtype}.liquid" "${new_template_file}"
-sh ./scripts/replace_types.bash $new_template_file $type $caps_subtype $caps_type "$title"
+sh ./scripts/replace_types.bash "$new_template_file" "$type" "$caps_subtype" "$caps_type" "$title"
 
 echo "Cleanup"
 find . -name *.bak -exec rm {} \;

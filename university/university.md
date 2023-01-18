@@ -6,7 +6,7 @@ eleventyNavigation:
   key: University
   title: University Artwork
   parent: Home
-  order: 5
+  order: 6
 navOptions:
   includeSelf: true
 ---

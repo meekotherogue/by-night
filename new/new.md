@@ -1,12 +1,12 @@
 ---
-title: Artwork
+title: The latest works from me
 layout: landing-page.liquid
-type: art
+type: new
 eleventyNavigation:
-  key: Art
-  title: Personal Artwork
+  key: New
+  title: ✨ New ✨
   parent: Home
-  order: 4
+  order: 1
 navOptions:
   includeSelf: true
 ---

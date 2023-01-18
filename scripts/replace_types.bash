@@ -10,7 +10,13 @@ new_subtype=$3
 new_caps_type=$4
 new_title=$5
 
-sed -i.bak "s/${old_type}/${new_type}/g" ${filename}
-sed -i.bak "s/${old_subtype}/${new_subtype}/g" ${filename}
+echo "filename: $filename new_type: $new_type new_subtype: $new_subtype new_caps_type: $new_caps_type new_title: $new_title"
+
+# echo "sed -i.bak \"s/${old_title}/${new_title}/g\" ${filename}"
 sed -i.bak "s/${old_title}/${new_title}/g" ${filename}
+# echo "sed -i.bak \"s/${old_type}/${new_type}/g\" ${filename}"
+sed -i.bak "s/${old_type}/${new_type}/g" ${filename}
+# echo "sed -i.bak \"s/${old_subtype}/${new_subtype}/g\" ${filename}"
+sed -i.bak "s/${old_subtype}/${new_subtype}/g" ${filename}
+# echo "sed -i.bak \"s/${old_caps_type}/${new_caps_type}/g\" ${filename}"
 sed -i.bak "s/${old_caps_type}/${new_caps_type}/g" ${filename}

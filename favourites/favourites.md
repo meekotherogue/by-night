@@ -6,7 +6,7 @@ eleventyNavigation:
   key: Favourites
   title: ❤ My Personal Favourites ❤
   parent: Home
-  order: 1
+  order: 2
 navOptions:
   includeSelf: true
 ---

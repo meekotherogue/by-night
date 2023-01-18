@@ -6,7 +6,7 @@ eleventyNavigation:
   key: Old
   title: Old Artwork
   parent: Home
-  order: 6
+  order: 7
 navOptions:
   includeSelf: true
 ---
