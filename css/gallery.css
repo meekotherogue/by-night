@@ -3,6 +3,12 @@
   margin: 0 auto;
 }
 
+@media (max-width: 566px) {
+  .gallery {
+    justify-content: center;
+  }
+}
+
 .gallery__thumbnail {
   overflow: hidden;
   margin: 4px;
@@ -12,7 +18,9 @@
 
 @media (max-width: 1023px) {
   .gallery__thumbnail {
-    height: 640px;
+    height: 50vh;
+    background-color: white;
+    margin-bottom: 20px;
   }
 }
 
