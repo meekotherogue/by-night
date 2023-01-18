@@ -13,6 +13,6 @@ navOptions:
   includeSelf: true
 ---
 
-Here is a collection of my personal favourite drawings in no particular order
+Here is a collection of my personal favourite drawings in no particular order.
 
 These are completed works done with traditional mediums such as pencils, inks, charcol, or pastel

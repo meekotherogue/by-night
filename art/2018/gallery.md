@@ -13,4 +13,4 @@ navOptions:
   includeSelf: true
 ---
 
-Here is the collection of completed drawings and paintings I have done in 2018
+Here is the collection of completed drawings and paintings I have done in 2018.

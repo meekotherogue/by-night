@@ -11,6 +11,6 @@ navOptions:
   includeSelf: true
 ---
 
-Here is a collection of my personal favourites in no particular order
+Here is a collection of my personal favourites in no particular order.
 
 These are my picks based on technical skills, composition, or just because I like them!

@@ -13,4 +13,4 @@ navOptions:
   includeSelf: true
 ---
 
-Here is the collection of commissioned artwork I have done in 2022
+Here is the collection of commissioned artwork I have done in 2022.

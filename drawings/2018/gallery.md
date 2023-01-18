@@ -13,4 +13,4 @@ navOptions:
   includeSelf: true
 ---
 
-Here is the collection of daily drawings I have done in 2018
+Here is the collection of daily drawings I have done in 2018.

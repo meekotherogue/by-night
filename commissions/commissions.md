@@ -11,4 +11,4 @@ navOptions:
   includeSelf: true
 ---
 
-Here is the collection of art that I was commissioned to create
+Here is the collection of art that I was commissioned to create.
