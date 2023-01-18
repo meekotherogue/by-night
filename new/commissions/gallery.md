@@ -8,9 +8,9 @@ eleventyNavigation:
   key: NewGalleryCommissions
   parent: New
   title: Commissions
-  order: 6
+  order: 1
 navOptions:
   includeSelf: true
 ---
 
-Here is the collection of completed drawings and paintings I have done in Commissions.
+Here are the latest commissions I have completed.

@@ -8,9 +8,9 @@ eleventyNavigation:
   key: NewGalleryGallery
   parent: New
   title: Gallery
-  order: 6
+  order: 2
 navOptions:
   includeSelf: true
 ---
 
-Here is the collection of completed drawings and paintings I have done in Gallery.
+Here are some of my latest works up in the gallery at [Honey Bee Tattoo Collective!](https://honey-bee-tattoo-collective.square.site/product/martina-rauert/64?cp=true&sa=false&sbp=false&q=false&category_id=2)

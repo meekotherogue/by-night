@@ -8,9 +8,9 @@ eleventyNavigation:
   key: NewGalleryPersonal
   parent: New
   title: Personal
-  order: 6
+  order: 3
 navOptions:
   includeSelf: true
 ---
 
-Here is the collection of completed drawings and paintings I have done in Personal.
+Here is a collection of my latest works that I have done for my own personal enjoyment!
