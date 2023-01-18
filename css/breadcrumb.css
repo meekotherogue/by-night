@@ -27,6 +27,11 @@
     width: 100%;
     max-width: 100%;
   }
+
+  .breadcrumb .breadcrumb__link {
+    font-size: 0.7em;
+    padding: 5px 0 5px 25px;
+  }
 }
 
 .breadcrumb .breadcrumb__link:after {
@@ -42,6 +47,11 @@
   margin-top: -50px;
   left: 100%;
   z-index: 2;
+}
+@media (max-width: 1023px) {
+  .breadcrumb .breadcrumb__link:after {
+    border-left: 15px solid var(--purple-500);
+  }
 }
 
 .breadcrumb .breadcrumb__item:first-child .breadcrumb__link {
