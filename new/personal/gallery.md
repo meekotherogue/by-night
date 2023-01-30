@@ -1,5 +1,5 @@
 ---
-title: The latest works from me
+title: ✨ New ✨
 layout: new/galleryPersonal.liquid
 type: new
 year: Personal

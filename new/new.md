@@ -1,5 +1,5 @@
 ---
-title: The latest works from me
+title: ✨ New ✨
 layout: landing-page.liquid
 type: new
 eleventyNavigation:
