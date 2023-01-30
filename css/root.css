@@ -3,6 +3,7 @@
 @import "breadcrumb.css";
 @import "colours.css";
 @import "about.css";
+@import "contact.css";
 
 .root {
   display: flex;

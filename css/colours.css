@@ -8,6 +8,8 @@
   --dark-grey: #4b4453;
   --light-grey: #b0a8b9;
 
+  --background-colour: #ffffff99;
+  --box-shadow: #0a0b0d 8%;
   --bg-gradient-start: var(--purple-700);
   --bg-gradient-end: var(--green-500);
   --active-text: var(--purple-500);
