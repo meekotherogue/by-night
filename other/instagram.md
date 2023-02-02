@@ -4,6 +4,6 @@ eleventyNavigation:
   title: 📷 Instagram ➚
   url: https://www.instagram.com/martinarart/
   parent: Home
-  order: 8
+  order: 9
 permalink: false
 ---

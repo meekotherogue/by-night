@@ -6,7 +6,7 @@ eleventyNavigation:
   key: Commissions
   title: Commissioned Artwork
   parent: Home
-  order: 3
+  order: 4
 navOptions:
   includeSelf: true
 ---

@@ -5,7 +5,7 @@ eleventyNavigation:
   key: About
   title: 👩🏻‍💻 About Me 👩🏻‍🎨
   parent: Home
-  order: 10
+  order: 11
 navOptions:
   includeSelf: true
 ---

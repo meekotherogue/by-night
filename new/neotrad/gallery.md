@@ -7,10 +7,12 @@ component: gallery
 eleventyNavigation:
   key: NewGalleryNeotrad
   parent: New
-  title: Neotrad
-  order: 6
+  title: Neotrad Tattoo Designs
+  order: 4
 navOptions:
   includeSelf: true
 ---
 
-Here is the collection of completed drawings and paintings I have done in Neotrad.
+### Disclaimer: I AM NOT A TATTOO ARTIST!
+
+However, as an artist who has a lot of tattoos, I do find it fun to come up with tattoo designs! Here is a couple of my most recent Neotrad designs

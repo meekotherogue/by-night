@@ -5,7 +5,7 @@ eleventyNavigation:
   key: ContactMe
   title: ✍🏻 Contact Me ✍🏻
   parent: Home
-  order: 11
+  order: 12
 navOptions:
   includeSelf: true
 ---
