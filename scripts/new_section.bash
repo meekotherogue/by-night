@@ -6,10 +6,10 @@ echo "\nLong title:"
 read title
 echo "\nSpecify new subtype:"
 read subtype
-# echo "\nSpecify image source directory (orig or img):"
-# read src
-# echo "\nSpecify image output directory (img):"
-# read out
+echo "\nSpecify image source directory (orig or img):"
+read src
+echo "\nSpecify image output directory (img):"
+read out
 echo "\nDefault description (or empty to auto generate):"
 read desc
 
@@ -27,8 +27,8 @@ case "$confirm" in
   * ) exit;;
 esac
 
-src="orig"
-out="img"
+# src="orig"
+# out="img"
 image_dir="${src}/${type}/${subtype}/"
 type_out_dir="${out}/${type}/"
 subtype_out_dir="${out}/${type}/${subtype}/"
