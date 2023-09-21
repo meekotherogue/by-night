@@ -8,9 +8,9 @@ eleventyNavigation:
   key: DrawingsGallery2020
   parent: Drawings
   title: 2020
-  order: 3
+  order: 4
 navOptions:
   includeSelf: true
 ---
 
-Here is the collection of completed drawings and paintings I have done in 2020.
+Here is the collection of drawings I have done in 2020.
