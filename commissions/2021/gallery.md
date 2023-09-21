@@ -1,5 +1,5 @@
 ---
-title: Commissioned
+title: Commissions
 layout: commissions/gallery2021.liquid
 type: commissions
 year: 2021

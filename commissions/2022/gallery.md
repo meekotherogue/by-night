@@ -1,5 +1,5 @@
 ---
-title: Commissioned Artwork
+title: Commissions
 layout: commissions/gallery2022.liquid
 type: commissions
 year: 2022
