@@ -8,7 +8,7 @@ eleventyNavigation:
   key: CommissionsGallery2022
   parent: Commissions
   title: 2022
-  order: 1
+  order: 2
 navOptions:
   includeSelf: true
 ---
