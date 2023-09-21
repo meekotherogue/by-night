@@ -8,7 +8,7 @@ eleventyNavigation:
   key: ArtGallery2021
   parent: Art
   title: 2021
-  order: 2
+  order: 3
 navOptions:
   includeSelf: true
 ---

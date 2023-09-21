@@ -1,5 +1,5 @@
 ---
-title: Art 2023
+title: Artwork
 layout: art/gallery2023.liquid
 type: art
 year: 2023
@@ -8,7 +8,7 @@ eleventyNavigation:
   key: ArtGallery2023
   parent: Art
   title: 2023
-  order: 6
+  order: 1
 navOptions:
   includeSelf: true
 ---

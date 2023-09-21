@@ -1,5 +1,11 @@
 [
   {
+    "file": "img/art/2023/AA_IMG_0483.jpeg",
+    "name": "AA_IMG_0483.jpeg",
+    "year": "2023",
+    "description": "Art from 2023"
+  },
+  {
     "file": "img/art/2023/7EAC2630-2DD2-4ECB-8ECB-3F764A5482CC.jpeg",
     "name": "7EAC2630-2DD2-4ECB-8ECB-3F764A5482CC.jpeg",
     "year": "2023",
@@ -182,12 +188,6 @@
   {
     "file": "img/art/2023/IMG_0424.jpeg",
     "name": "IMG_0424.jpeg",
-    "year": "2023",
-    "description": "Art from 2023"
-  },
-  {
-    "file": "img/art/2023/IMG_0483.jpeg",
-    "name": "IMG_0483.jpeg",
     "year": "2023",
     "description": "Art from 2023"
   },
